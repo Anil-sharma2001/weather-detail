@@ -39,7 +39,7 @@ function App() {
         </div>
         <div className="bottom">
           <div className="feels">
-            <p className="bold">65°c</p>
+            {data.main ?<p className="bold">{data.main.feels_like}</p>:null}
             <p>Feels like</p>
           </div>
           <div className="humidity">
